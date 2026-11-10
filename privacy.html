@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | ながらノート</title>
+<meta name="description" content="ながらノートの端末内保存、広告SDK、同意管理、アプリ内課金と情報の取扱いについて。">
+<meta property="og:title" content="プライバシーポリシー | ながらノート">
+<meta property="og:description" content="ながらノートの端末内保存、広告SDK、同意管理、アプリ内課金と情報の取扱いについて。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="ながらノート">
+<meta property="og:image" content="https://daiai20240901.github.io/nagaranote-site/assets/images/app-icon.png">
+<link rel="canonical" href="https://daiai20240901.github.io/nagaranote-site/privacy.html">
+<meta property="og:url" content="https://daiai20240901.github.io/nagaranote-site/privacy.html">
+<meta name="theme-color" content="#6650df">
+<link rel="icon" href="assets/images/favicon.png">
+<link rel="apple-touch-icon" href="assets/images/app-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header>
+<div class="nav-wrap">
+<a class="brand" href="index.html">
+<img src="assets/images/app-icon.png" alt="" width="38" height="38">ながらノート</a>
+<nav aria-label="メインナビゲーション">
+<a href="index.html">ホーム</a>
+<a href="support.html">サポート</a>
+<a href="privacy.html" aria-current="page">プライバシー</a>
+<a href="terms.html">利用規約</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="page-intro">
+<p class="eyebrow">PRIVACY</p>
+<h1>プライバシーポリシー</h1>
+<p>最終更新日：2026年11月10日</p>
+</div>
+<article class="document">
+<section>
+<h2>1. このポリシーについて</h2>
+<p>ながらノートの運営者 DAI（以下「開発者」）は、本アプリおよび公式サイトでの情報の取扱いを以下のとおり定めます。</p>
+</section>
+<section>
+<h2>2. ノートと端末内の情報</h2>
+<p>ノート名、本文、手書きデータ、ページの順序、作成・更新日時、背景色などを、ノート機能の提供のためSwiftDataで端末内に保存します。ペンや表示の設定も端末内に保存します。広告視聴で獲得した作成権と使用状況は端末内のファイルに保存します。</p>
+<p>アプリ独自のユーザー登録や、開発者のサーバーへのノート同期はありません。現在の実装でノート内容を広告SDKへ渡す処理はありません。OSによるバックアップの対象となる可能性があり、その取扱いは端末・Appleの設定に依存します。</p>
+</section>
+<section>
+<h2>3. 広告配信と第三者への送信</h2>
+<p>広告SDKの初期化前に、Publisher Privacy Treatment（PPT）による広告パーソナライズの無効化と、Publisher first-party IDの無効化を設定しています。この設定は、SDKによる情報収集や第三者への送信、トラッキングが一切行われないことを保証するものではありません。</p>
+<p>リワード広告の配信にGoogle AdMob（Google Mobile Ads SDK）を利用します。SDKを通じて、IPアドレス、端末等の識別子、概略位置、広告の表示・操作情報、アプリ操作情報、クラッシュ・性能等の診断情報がGoogle等の第三者に送信され、広告配信・測定・分析・不正防止・品質向上に使用される場合があります。送信項目はSDKの構成、同意状態、端末設定等によって異なります。</p>
+<p>データの取扱いと保存期間は、<a href="https://policies.google.com/privacy?hl=ja">Googleのプライバシーポリシー</a>および<a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDKのデータ開示資料</a>もご確認ください。</p>
+</section>
+<section>
+<h2>4. 同意管理・広告識別子</h2>
+<p>Google User Messaging Platform（UMP）SDKで同意情報を確認し、必要な場合に同意フォームを表示します。SDKが広告のリクエストを許可した場合に広告SDKを開始します。必要な場合は、アプリの設定にある「広告のプライバシー設定」から選択を見直せます。
+</p>
+<p>UMPによる同意確認はProの購入状態にかかわらず起動時に行われます。同意管理SDKも、同意管理機能の提供のため、概略位置、性能情報、操作情報を取り扱う場合があります。Proではノート作成のための広告視聴が不要になりますが、SDKによる情報の取扱いが一切なくなることを意味しません。</p>
+<p>現在の実装ではApp Tracking Transparency（ATT）の許可ダイアログを要求していません。IDFAへのアクセスにはiOSの許可が必要です。ATTの要求がないことは、他の識別子や診断情報を含むすべての送信がないことを意味しません。</p>
+</section>
+<section>
+<h2>5. アプリ内課金</h2>
+<p>Proの購入と復元にはAppleのStoreKitを利用します。アプリはAppleから取得した検証済みの取引・現在の権利情報を用いてProの利用可否を判定します。独自サーバーで購入情報を管理する機能はなく、クレジットカード番号等の決済情報を開発者が取得する仕組みはありません。</p>
+<p>
+<a href="https://www.apple.com/legal/privacy/jp/">Appleのプライバシーポリシー</a>と<a href="https://www.apple.com/legal/internet-services/itunes/jp/terms.html">Appleメディアサービス利用規約</a>をご確認ください。</p>
+</section>
+<section>
+<h2>6. お問い合わせの情報</h2>
+<p>お問い合わせ時に、送信元のメールアドレス、お名前（記載された場合）、問い合わせ内容や添付資料を、問い合わせへの回答・調査のために取り扱います。これらの情報は運営者DAIが専用のGmailアカウントで管理し、回答・調査に必要な期間だけ保管し、不要になったら削除します。お問い合わせは下記メールアドレスで受け付けます。Gmailの利用に伴う情報の取扱いについては、<a href="https://policies.google.com/privacy?hl=ja">Googleのプライバシーポリシー</a>もご確認ください。</p>
+</section>
+<section>
+<h2>7. 保存・削除と利用者の選択</h2>
+<p>ノートやページはアプリ内で削除できます。アプリの削除で端末内のアプリデータが失われる場合があります。OSのバックアップ、Appleの取引記録、広告サービス側の記録まで同時に削除されるとは限りません。購入済みの権利はApple側で管理されます。</p>
+<p>適用される法令に基づく情報の開示・訂正・削除等のご相談は、本ページのお問い合わせ窓口へお寄せください。開発者が管理する情報の範囲で対応します。Google・Appleが管理する情報については各社の窓口やプライバシー設定をご利用ください。</p>
+</section>
+<section>
+<h2>8. 公式サイトについて</h2>
+<p>公式サイトにはアクセス解析、広告配信、問い合わせフォーム、独自のCookieを利用する処理を設けていません。本サイトを配信するGitHub Pagesでは、配信・セキュリティ等のためホスティング事業者がアクセス情報を取り扱う場合があります。<a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する声明</a>をご確認ください。</p>
+</section>
+<section>
+<h2>9. お問い合わせ先</h2>
+<p>運営者：DAI</p>
+<p>お問い合わせ：<a href="mailto:dai.apps.support+nagaranote@gmail.com">dai.apps.support+nagaranote@gmail.com</a></p>
+<p>お問い合わせの際は、アプリのバージョン、iOSのバージョン、端末名、問題が起きる手順をお知らせください。ノートの内容や購入情報など、不要な個人情報は送らないでください。</p>
+</section>
+<section>
+<h2>10. 改定</h2>
+<p>機能や利用サービス、法令の変更などに応じて本ポリシーを改定します。変更内容はこのページに掲載し、重要な変更は必要に応じて適切な方法でお知らせします。</p>
+</section>
+</article>
+</main>
+<footer>
+<div class="footer-top">
+<a class="brand" href="index.html">
+<img src="assets/images/app-icon.png" width="32" height="32" alt="">ながらノート</a>
+<p>見ている時間を、残せる時間に。</p>
+</div>
+<nav aria-label="フッターナビゲーション">
+<a href="index.html">ホーム</a>
+<a href="support.html">サポート</a>
+<a href="privacy.html">プライバシー</a>
+<a href="terms.html">利用規約</a>
+</nav>
+<p class="copyright">© 2026 DAI</p>
+</footer>
+</body>
+</html>
